@@ -2,101 +2,123 @@
 <head>
 	<title> How to Solve a Rubik's Cube </title>
 	<link rel = "icon" href = "https://classteaching.files.wordpress.com/2019/09/rubiks-cube.jpg">
+	<link rel="stylesheet" href="Cubing.css">
 </head>
 
 <body>
-	<h1 align="center"> How to Solve a Rubik's Cube in 4 Steps </h1>
-	<h2> Prerequisites </h2>
-	<p> Firstly, we will talk about notation. 
-		The basic Rubik's Cube notations are R, R', L, L', F, F', U, U', D, D', B, B'.
-		Any notation without the ' you will turn clockwise 90 degrees, otherwise turn counterclockwise 90 degrees. <br>
-		<ul>
-			<li> R stands for right, which you turn the face on the right. </li>
-			<li> L stands for left, you turn the face on your left when you see this. </li>
-			<li> U stands for up, which you turn the top face. </li>
-			<li> D stands for down, which you turn the bottom face. </li>
-			<li> F stands for front, which you turn the front face. </li>
-			<li> B stands for back, which you turn the back face. </li>
-		</ul>
-		A wide turn is a turn which you turn the first 2 layers of the cube. <br>
-		If there is a 2 after the notation, it means you have to turn it twice.
-		This is defined by a lowercase letter being used instead of an uppercase one. <br>
-		Headlights are 2 adjacent corner pieces that have the same colour facing the same side. <br>
-		M stands for middle, where you moving the middle layer vertically.
-	</p>
-	<h2> Step 1: The White Cross </h2>
-	<p> To make the cross, first find the white center. 
-	Then find the edge pieces (the one with 2 colours on them) that have white on them. <br>
-	Then look at the second colour of the white edge and align it with the matching coloured center. <br>
-	After that, turn your cube until the white face of the edge aligns with the white center.
-	Repeat that with the other 3 white edges.
-	</p>
-	<h2> Step 2: F2L </h2>
-	<p> F2L, or first 2 layers, is the step where you make the first 2 layers of a cube.
-	First, Find corner pieces (pieces with 3 colours on them) that have white on them.
-	Now move this piece to the top face if it is already. Use <b> R, U, R', U' </b> to do this. <br>
-	Next, align the corner piece by turning the top face to which it's in between the centers of the 2 non white colours. <br>
-	Finally, use the <b> R, U, R', U' </b> algorithm until the corner piece looks like it's in the right spot.
-	Repeat this with the other 3 corners.
-	</p>
-	<h2> Step 3: OLL </h2>
-	<p> OLL stands for Orient Last Layer.
-		For the first three algorithms ignore the corner pieces.
-		If the yellow face looks like a dot, use this algorithm: <b> F R U R' U' F' f R U R' U' f' </b> <br>
-		If the yellow face looks like a straight line, turn it so it's horizontal to you, then do this algorithm:
-		<b> F R U R' U' F' </b> <br>
-		If the yellow face has an L shape on it, make it face the bottom right corner and do this algorithm:
-		<b> f R U R' U' f' </b> <br>
-		If the yellow face looks like a fish, do this algorithm after aligning it to face the bottom left: <b> R U R' U R U2 R' </b> <br>
-		Repeat that algorithm until all the yellow faces face up.
-		If the yellow face has a cross shape on it but doesn't have 2 headlights on either side,
-		do the algorithm: <b> R U2 R2 U' R2 U' R2 U2 R </b> <br>
-		If the yellow face has a cross shape with 2 headlights on either side, make one of the headlights face you and
-		do this algorithm: <b> R U R' U R U' R' U R U2 R' </b> <br>
-		If the yellow face looks like a T with a wide head without headlights, do this algorithm, making the head face to the right:
-		<b> r U R' U' r' F R F' </b> <br>
-		If the yellow face looks like a T with a wide head with headlights, do this algorithm, making the headlights face you:
-		<b> R2 D R' U2 R D' R' U2 R' </b>
-		<img src = "https://cuboss.se/wp-content/uploads/2019/09/3x3-oll.jpg" width = "720">
-	</p>
-	<h2> Step 4: PLL </h2>
-	<p> PLL stands for Permutate Last Layer.
-		These 2 algorithms are for changing it to be the next algorithms. <br>
-		<table align = "center" border = "2" cellpadding = "5" cellspacing = "0">
-			<tr>
-				<th> Description </th>
-				<th> Algorithm </th>
-			</tr>
-			<tr>
-				<td> If there are exactly 1 pair of headlights, do this algorithm after making the headlights face left. </td>
-				<td> <b> R U R' U' R' F R2 U' R' U' R U R' F' </b> </td>
-			</tr>
-			<tr>
-				<td> If there are no headlights, do this algorithm. </td>
-				<td> <b> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </td>
-		</table>
-		Now look at where you need to move your edges to solve the cube.
-		<table align = "center" border = "2" cellpadding = "5" cellspacing = "0">
-			<tr>
-				<th> Description </th>
-				<th> Algorithm </th>
-			</tr>
-			<tr>
-				<td> If it's moving them in a cross shape, do this. </td>
-				<td> <b> M2 U M2 U2 M2 U M2 </b> </td>
-			</tr>
-			<tr>
-				<td> If it's moving in a clockwise triangular shape, do this. </td>
-				<td> <b> R2 U R U R' U' R' U' R' U R' </b> </td>
-			</tr>
-			<tr>
-				<td> If it's moving in a anticlockwise triangular shape, do this. </td>
-				<td> <b> R U' R U R U R U' R' U' R2 </b> </td>
-			</tr>
-			<tr>
-				<td> Otherwise, do this. </td>
-				<td> <b> M' U M2 U M2 U M' U2 M2 </b> </td>
-		</table>
-	</p>
-	<h2> Step 5: Invest all of your free time into solving a Rubik's Cube until you're fast enough to compete in a competition. </h2>
+	<div id="container">
+		<div id="title">
+			<h1> How to Solve a Rubik's Cube in 4 Steps </h1>
+		</div>
+		<div id="main_text">
+			<div id="intro">
+				<h2> Prerequisites </h2>
+				<p> Firstly, we will talk about notation. 
+					The basic Rubik's Cube notations are R, R', L, L', F, F', U, U', D, D', B, B'.
+					Any notation without the ' you will turn clockwise 90 degrees, otherwise turn counterclockwise 90 degrees. <br>
+					<ul>
+						<li> R stands for right, which you turn the face on the right. </li>
+						<li> L stands for left, you turn the face on your left when you see this. </li>
+						<li> U stands for up, which you turn the top face. </li>
+						<li> D stands for down, which you turn the bottom face. </li>
+						<li> F stands for front, which you turn the front face. </li>
+						<li> B stands for back, which you turn the back face. </li>
+					</ul>
+					A wide turn is a turn which you turn the first 2 layers of the cube. <br>
+					If there is a 2 after the notation, it means you have to turn it twice.
+					This is defined by a lowercase letter being used instead of an uppercase one. <br>
+					Headlights are 2 adjacent corner pieces that have the same colour facing the same side. <br>
+					M stands for middle, where you moving the middle layer vertically.
+				</p>
+			</div>
+			<div id="grid">
+				<div id="cell1" class="cells">
+					<h2> Step 1: The White Cross </h2>
+					<p> To make the cross, first find the white center. 
+					Then find the edge pieces (the one with 2 colours on them) that have white on them. <br>
+					Then look at the second colour of the white edge and align it with the matching coloured center. <br>
+					After that, turn your cube until the white face of the edge aligns with the white center.
+					Repeat that with the other 3 white edges.
+					</p>
+				</div>
+				<div id="cell2" class="cells">
+					<h2> Step 2: F2L </h2>
+					<p> F2L, or first 2 layers, is the step where you make the first 2 layers of a cube.
+					First, Find corner pieces (pieces with 3 colours on them) that have white on them.
+					Now move this piece to the top face if it is already. Use <b> R, U, R', U' </b> to do this. <br>
+					Next, align the corner piece by turning the top face to which it's in between the centers of the 2 non white colours. <br>
+					Finally, use the <b> R, U, R', U' </b> algorithm until the corner piece looks like it's in the right spot.
+					Repeat this with the other 3 corners.
+					</p>
+				</div>
+				<div id="cell3" class="cells">
+					<h2> Step 3: OLL </h2>
+					<p> OLL stands for Orient Last Layer.
+						For the first three algorithms ignore the corner pieces.
+						If the yellow face looks like a dot, use this algorithm: <b> F R U R' U' F' f R U R' U' f' </b> <br>
+						If the yellow face looks like a straight line, turn it so it's horizontal to you, then do this algorithm:
+						<b> F R U R' U' F' </b> <br>
+						If the yellow face has an L shape on it, make it face the bottom right corner and do this algorithm:
+						<b> f R U R' U' f' </b> <br>
+						If the yellow face looks like a fish, do this algorithm after aligning it to face the bottom left: <b> R U R' U R U2 R' </b> <br>
+						Repeat that algorithm until all the yellow faces face up.
+						If the yellow face has a cross shape on it but doesn't have 2 headlights on either side,
+						do the algorithm: <b> R U2 R2 U' R2 U' R2 U2 R </b> <br>
+						If the yellow face has a cross shape with 2 headlights on either side, make one of the headlights face you and
+						do this algorithm: <b> R U R' U R U' R' U R U2 R' </b> <br>
+						If the yellow face looks like a T with a wide head without headlights, do this algorithm, making the head face to the right:
+						<b> r U R' U' r' F R F' </b> <br>
+						If the yellow face looks like a T with a wide head with headlights, do this algorithm, making the headlights face you:
+						<b> R2 D R' U2 R D' R' U2 R' </b>
+						<!<img src = "https://cuboss.se/wp-content/uploads/2019/09/3x3-oll.jpg" width = "720">>
+					</p>
+				</div>
+				<div id="cell4" class="cells">
+					<h2> Step 4: PLL </h2>
+					<p> PLL stands for Permutate Last Layer.
+						These 2 algorithms are for changing it to be the next algorithms. <br>
+						<table border = "2" cellpadding = "5" cellspacing = "0">
+							<tr>
+								<th> Description </th>
+								<th> Algorithm </th>
+							</tr>
+							<tr>
+								<td> If there are exactly 1 pair of headlights, do this algorithm after making the headlights face left. </td>
+								<td> <b> R U R' U' R' F R2 U' R' U' R U R' F' </b> </td>
+							</tr>
+							<tr>
+								<td> If there are no headlights, do this algorithm. </td>
+								<td> <b> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </td>
+						</table>
+						Now look at where you need to move your edges to solve the cube.
+						<table  border = "2" cellpadding = "5" cellspacing = "0">
+							<tr>
+								<th> Description </th>
+								<th> Algorithm </th>
+							</tr>
+							<tr>
+								<td> If it's moving them in a cross shape, do this. </td>
+								<td> <b> M2 U M2 U2 M2 U M2 </b> </td>
+							</tr>
+							<tr>
+								<td> If it's moving in a clockwise triangular shape, do this. </td>
+								<td> <b> R2 U R U R' U' R' U' R' U R' </b> </td>
+							</tr>
+							<tr>
+								<td> If it's moving in a anticlockwise triangular shape, do this. </td>
+								<td> <b> R U' R U R U R U' R' U' R2 </b> </td>
+							</tr>
+							<tr>
+								<td> Otherwise, do this. </td>
+								<td> <b> M' U M2 U M2 U M' U2 M2 </b> </td>
+						</table>
+					</p>
+				</div>
+			</div>
+			<div id="trol">
+				<h2> Step 5: Invest all of your free time into solving a Rubik's Cube until you're fast enough to compete in a competition. </h2>
+				<img src="https://i.giphy.com/media/3orieRlHJOwAaBrbzy/giphy.webp">
+			</div>
+		</div>
+	</div>
 </body>

@@ -1,0 +1,77 @@
+body {
+	margin:0px;
+	padding:0px;
+}
+#container {
+	background-image:url("RubiksCube.jpg");
+	background-size:cover;
+	background-position-x:center;
+	padding:2%;
+}
+#title {
+	top: 0px;
+	font-family: Verdana, Helvetica, sans-serif;
+	position:absolute;
+	font-size: 1.01vw;
+	margin-left: 25vw;
+	margin-right: 25vw;
+	background-color:#FEFEFF;
+}
+#main_text {
+	background-color:#FEFFFE;
+	margin: 5vw;
+	padding-top: 1vw;
+}
+
+#intro {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+
+#intro {
+	font-family: 'Times New Roman', serif;
+	font-size: 1.4vw;
+	border-radius: 1vw;
+	background-color:#FEFFAA;
+	margin: 1.5vw;
+}
+
+#intro > h2 {
+	text-align: center;
+	font-family: Verdana, Helvetica, sans-serif;
+	margin-left: 25vw;
+	margin-right: 25vw;
+}
+#grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap:1vw;
+	padding:1vw;
+}
+
+.cells {
+	padding: 2.5vw;
+	font-family: 'Times New Roman', serif;
+	font-size: 1.4vw;
+	border-radius: 1vw;
+	background-color:#baffff;
+
+}
+
+
+.cells > h2 {
+	text-align: center;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+#trol > img {
+	margin-left: 25vw;
+	margin-right: 25vw;
+}
+
+#trol > h2 {
+	text-align: center;
+	font-family: bradley hand, cursive;
+	font-size: 1.5vw;
+}
