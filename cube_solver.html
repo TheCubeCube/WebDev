@@ -31,10 +31,26 @@
 					</div>
 				</div>
 			</div>
+			<div id = "controls">
+				<h2>controls</h2>
+				<button type="button" onclick="twist_column_clockwise(2);update_display()">R</button>
+				<button type="button" onclick="twist_column_counterclockwise(2);update_display()">R'</button>
+				<button type="button" onclick="twist_column_clockwise(0);update_display()">L</button>
+				<button type="button" onclick="twist_column_counterclockwise(0);update_display()">L'</button>
+				<button type="button" onclick="twist_row_left(0);update_display()">U</button>
+				<button type="button" onclick="twist_row_right(0);update_display()">U'</button>
+				<button type="button" onclick="twist_row_left(2);update_display()">D</button>
+				<button type="button" onclick="twist_row_right(2);update_display()">D'</button>
+				<button type="button" onclick="twist_column_clockwise(1);update_display()">M</button>
+				<button type="button" onclick="twist_column_counterclockwise(1);update_display()">M'</button>
+				<button type="button" onclick="twist_row_left(1);update_display()">E</button>
+				<button type="button" onclick="twist_row_right(1);update_display()">E'</button>
+				<button type="button" onclick="random_move(); update_display()"> Random Move </button>
+			</div>
 			<div id = "instructions">
 				<h2>Instructions</h2>
 			</div>
 		</div>
-
 	</div>
+	
 </body>
